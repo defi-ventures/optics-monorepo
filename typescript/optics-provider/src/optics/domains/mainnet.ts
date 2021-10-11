@@ -22,7 +22,8 @@ export const polygon: OpticsDomain = {
   name: 'polygon',
   id: 1886350457,
   paginate: {
-    blocks: 1999,
+    // This needs to be stupidly low to avoid RPC timeouts
+    blocks: 100,
     from: 18895794,
   },
   bridgeRouter: '0xf244eA81F715F343040569398A4E7978De656bf6',
